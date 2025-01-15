@@ -59,7 +59,7 @@ st.pyplot(fig)
 
 # Kalkulator BMI
 st.write("### Kalkulator BMI")
-weight = st.number_input("Berat Badan (kg)", min_value=30.0, max_value=200.0, step=0.1)
+weight = st.number_input("Berat Badan (kg)", min_value=20.0, max_value=200.0, step=0.1)
 height = st.number_input("Tinggi Badan (cm)", min_value=100.0, max_value=250.0, step=0.1)
 if weight and height:
     bmi_calculated = weight / (height / 100) ** 2
